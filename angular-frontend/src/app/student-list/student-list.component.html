@@ -1,0 +1,26 @@
+<h2>Student List</h2>
+
+<table class="table table-striped text-center">
+	<thead>
+		<tr>
+			<th>First Name</th>
+			<th>Last Name</th>
+			<th>Email</th>
+			<th>Actions</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor = "let student of students">
+			<td>{{student.firstName}}</td>
+			<td>{{student.lastName}}</td>
+			<td>{{student.email}}</td>
+			<td><button (click) = "updateStudent(student.id)" class="btn" 
+				style="background-color: #728FCE; color: #fff">Update</button>
+				<button (click) = "deleteStudent(student.id)" class="btn btn-danger" 
+				style="margin-left: 15px;">Delete</button>
+				<button (click) = "studentDetails(student.id)" class="btn btn-secondary" 
+				style="margin-left: 15px;">View</button>
+			</td>
+		</tr>
+	</tbody>
+</table>

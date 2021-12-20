@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+h2{
+  margin: 20px 0;
+  background: -webkit-linear-gradient(#171919, #FF002F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
